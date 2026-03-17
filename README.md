@@ -5,7 +5,7 @@ Connect your GoHighLevel sub-account to Claude Code. Talk to your CRM, contacts,
 ## One-Command Install
 
 ```bash
-git clone https://github.com/marc4806/ghl-mcp.git && cd ghl-mcp && bash install.sh
+git clone https://github.com/tenfoldmarc/ghl-mcp.git && cd ghl-mcp && bash install.sh
 ```
 
 The installer will:
@@ -88,7 +88,7 @@ Once connected, just talk to Claude naturally:
 
 ```bash
 # Clone and install
-git clone https://github.com/marc4806/ghl-mcp.git
+git clone https://github.com/tenfoldmarc/ghl-mcp.git
 cd ghl-mcp
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
@@ -125,3 +125,7 @@ Then restart Claude Code.
 - Python 3.10+
 - Claude Code CLI
 - A GoHighLevel sub-account with a Private Integration
+
+---
+
+Built by [@tenfoldmarc](https://instagram.com/tenfoldmarc) — follow for more AI automation builds.
