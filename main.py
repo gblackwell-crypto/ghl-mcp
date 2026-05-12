@@ -1979,7 +1979,7 @@ async def add_contact_to_campaign(contact_id: str, campaign_id: str) -> str:
 
     Args:
         contact_id: Contact ID
-        campaign_id: Campaign ID (get from list_drip_campaigns)
+        campaign_id: Campaign ID (get from list_drip_campaign)
     """
     return await _post(f"{BASE_URL}/contacts/{contact_id}/campaigns/{campaign_id}", {})
 
@@ -1987,4 +1987,4 @@ async def add_contact_to_campaign(contact_id: str, campaign_id: str) -> str:
 # ── Entry point ───────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
-    mcp.run()
+    mcp.run(transport="sse")
