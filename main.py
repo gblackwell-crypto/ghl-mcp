@@ -1987,4 +1987,4 @@ async def add_contact_to_campaign(contact_id: str, campaign_id: str) -> str:
 # ── Entry point ───────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
-    mcp.run(transport="streamable-http")
+    mcp.run(transport="streamable-http", host="0.0.0.0")
