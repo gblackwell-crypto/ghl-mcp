@@ -122,7 +122,6 @@ async def search_contacts(
     phone: Optional[str] = None,
     tag: Optional[str] = None,
     limit: int = 25,
-    skip: int = 0,
 ) -> str:
     """Search contacts in the GHL sub-account. Supports full-text search and filters.
 
@@ -132,9 +131,8 @@ async def search_contacts(
         phone: Filter by phone number
         tag: Filter by tag name
         limit: Number of results (max 100)
-        skip: Offset for pagination
     """
-    params: dict = {"locationId": _loc(), "limit": limit, "skip": skip}
+    params: dict = {"locationId": _loc(), "limit": limit}
     if query:
         params["query"] = query
     if email:
